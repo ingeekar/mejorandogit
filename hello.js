@@ -5,13 +5,9 @@ $(document).ready(function() {
     }).then(function(data) {
         for (i=0; i<=data.length; i++){
             var docentes = [data[i].docente]
-             $('.nombre').append(docentes +", ");
+             
         }
-        
-        var unicos = $unique(data);
-         $('.sueldo').append(unicos);
-      
-       
+       $('.nombre').append(docentes +", ");
       
     });
 });
