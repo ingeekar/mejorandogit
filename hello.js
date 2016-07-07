@@ -5,8 +5,7 @@ $(document).ready(function() {
     }).then(function(data) {
         for (i=0; i<=data.length; i++){
              $('.nombre').append(data[i].nombre +", ");
-             var salarios = data[i].salarioDiario +", ";
-             var unicos = $unique(salarios);
+             var unicos = $unique(data[i].nombre);
              $('.sueldo').append(unicos);
              
         }
