@@ -5,8 +5,7 @@ $(document).ready(function() {
     }).then(function(data) {
         for (i=0; i<=data.length; i++){
             var docentes = [data[i].docente]
-            var unicos = $unique(docentes)
-            $('.nombre').append(unicos +", ");
+            $('.nombre').append(docentes +", ");
         }
        console.log(docentes);
       
