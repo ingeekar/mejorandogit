@@ -7,7 +7,7 @@ $(document).ready(function() {
             var docentes = [data[i].docente]
             $('.nombre').append(docentes +", ");
         }
-       
+       console.log(docentes);
       
     });
 });
