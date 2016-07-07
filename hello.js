@@ -5,9 +5,9 @@ $(document).ready(function() {
     }).then(function(data) {
         for (i=0; i<=data.length; i++){
             var docentes = [data[i].docente]
-             
+            $('.nombre').append(docentes +", ");
         }
-       $('.nombre').append(docentes +", ");
+       
       
     });
 });
