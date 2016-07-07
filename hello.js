@@ -3,7 +3,9 @@ $(document).ready(function() {
     $.ajax({
         url: "https://script.google.com/macros/s/AKfycbzghJLvbFvaJopeB2_hBW4lzVT60LzVC2xdIOmxlV1WwiqiikI/exec"
     }).then(function(data) {
-       $('.nombre').append(data.id);
-       $('.sueldo').append(data.content);
+        var datoUsuario = data[0].nombre;
+        var sueldo =  data[0].sueldo;
+       $('.nombre').append(datoUsuario);
+       $('.sueldo').append(sueldo);
     });
 });
