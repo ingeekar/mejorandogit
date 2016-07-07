@@ -1,9 +1,9 @@
 $(document).ready(function() {
     alert ("funcionando");
     $.ajax({
-        url: "http://rest-service.guides.spring.io/greeting"
+        url: "https://script.google.com/macros/s/AKfycbzghJLvbFvaJopeB2_hBW4lzVT60LzVC2xdIOmxlV1WwiqiikI/exec"
     }).then(function(data) {
-       $('.greeting-id').append(data.id);
-       $('.greeting-content').append(data.content);
+       $('.exec-nombre').append(data.id);
+       $('.exec-sueldo').append(data.content);
     });
 });
