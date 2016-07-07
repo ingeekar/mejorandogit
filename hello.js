@@ -5,6 +5,7 @@ $(document).ready(function() {
     }).then(function(data) {
         for (i=0; i<=data.length; i++){
              $('.nombre').append(data[i].nombre +", ");
+             $('.sueldo').append(data[i].salarioDiario +", ");
         }
         
       
